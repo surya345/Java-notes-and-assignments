@@ -1,4 +1,5 @@
 ### Write an algorithm for accepting two numbers, divide the first number by second and display their quotient.
+
 ---
 step1 start algorithm
 step2 accept first number
