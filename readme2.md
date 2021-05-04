@@ -4,7 +4,7 @@
 Step1 Start the Algorithm
 Step2 Accept radius of the circle
 step3 Intialize the variable area
-step4 Calculate area= 3.14*r*r
+step4 Calculate area= 3.14*radius*radius
 step5 Display the area
 step6 End the algorithm
 ```

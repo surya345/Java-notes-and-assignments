@@ -1,0 +1,113 @@
+
+	Task1:
+	------
+
+	Model classes / POJO class
+	------------------------------------
+	MusicItem:-releaseType,artist[], album[] 
+
+	Album:-	NumberOfSong, albumName,yearOfRelease,artist object, gener
+	Artist:-  artistName, music[]
+	Music:- songName, duration, yearofRelase,Gener
+
+	class Music{
+	
+	String songName, yearofRelase,Gener, duration;
+		
+	// getter/setter
+
+	} 
+
+	Artist:-  artistName, music[]
+
+	class Artist{
+		
+	string artistName;
+	Music music[];
+	//use constructor initialization
+	
+
+	
+
+	}
+
+	class MusicItemNode{
+	
+		MusicItem musicItem;
+		MusicItemNode next;
+		MusicItemNode prev;
+	}
+	
+
+	
+	Operative class
+	---------------------------------
+	class MusicCatlog{
+
+	  musicItemList(DoubleLinkedList)
+
+
+
+
+	Task2(in Side MusicCatlog class)
+	----------------------------------------
+
+	public boolean createMusingCatlog(String catlogFileName){
+
+	//create doublelinked list of MusicCatlog type data
+
+	//list should be created in sorted order of artist name and then year of relaese
+
+	//check if list is created return true else false.
+
+		return flase;
+		
+	}
+
+	public boolean isInAscendingOrder(MusicItem newItem){
+
+	// compare two artistName and year
+	//retrun ture if first item came first on the basis of releaseYear and name alphabet else retrun false
+	//Item shoud be inserted in list before/after the existing one, based on which one is first. 
+	}
+
+	task3(inside MusicItem class)
+	------------------------------
+	void showDetails(){
+
+	//create an enum Direction{FORWARD,REVERSE} to traverse through the musing catlog
+
+	//call the method and pass argument direction based on that show(traverse and print)
+	// the list:
+
+	enum Direction{FORWARD,REVERSE};
+
+	 void showMusicCatalog(Direction direction);
+	//
+	}
+
+	void showMusicCatalog(Direction direction){
+	
+	if(directio.equals("FORWARD"))
+	// forwared traversal assign head in to temp and check temp.next!=tail
+	and print
+	else {
+		// backward travearsal assign tail in the temp and check temp.prev!=head and then print
+	}
+		
+	}
+
+	Task4:
+	------
+
+	class MusicJukebox{
+
+	// dusplay the output based on:
+		
+		1. by artist name taken by user
+		2. by Gener taken by user
+		3. by album name or song name
+		
+
+
+	}

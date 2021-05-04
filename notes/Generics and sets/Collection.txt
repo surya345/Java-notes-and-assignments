@@ -1,0 +1,41 @@
+Collection - group of object known as elements.
+Framework - It is a reusable API's.
+API(Application Programming Interface)- It is set of classes,interfaces and methods
+Collection API
+Interfaces
+classes
+Algorithm
+CRUD Technologies
+C-Create
+R-Retrieve
+U-Update
+D-Delete
+Collection is nothing but group of similar data.
+It provide us an API to work with data structures such as trees,lists,sets,maps,arrays etc.
+Collection allow us to add,retrieve,update and delete a set of objects
+Collection Framework
+1.Set Interface
+2.List Interface
+3.Queue Interface - Deque Interface
+4.Map Interface
+
+1. Set Interface
+    |          |
+    HashSet    SortedSet Interface
+                    |
+                    TreeSet
+
+                    It is an interface which is extending Collection.
+                    It is a group of object known as elements.
+                    It will add element in custom order.
+                    It is unordered Collection.
+                    It will not accept duplicate element.
+2. List Interface 
+    |         |
+ArrayList     LinkedList
+                    It is an interface which is extending Collection.
+                    It is a group of object known as elements.
+                    It will add element in natural order.
+                    It is an ordered Collection.
+                    It will accept duplicate element.
+                     

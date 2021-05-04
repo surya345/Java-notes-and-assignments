@@ -1,0 +1,34 @@
+1. class Routues
+{
+    // Attribute
+    from;
+    to;
+    distance;
+    travelTime;
+    airFare;
+    // Constructor
+
+    // getter and setter
+
+    // toString Methods
+}
+}
+
+2. class DirectFlightSort implements Comparator<Routes>
+  {
+     public int compare()
+     {
+        // implementation
+     }
+  }
+3.class RouteImpl
+{
+    static void readFromFile(String fileName) 
+    {
+        // implementation 
+    }
+    public static void main(String a[])
+    {
+        // implementation
+    }
+}

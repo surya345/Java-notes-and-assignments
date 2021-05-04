@@ -1,0 +1,8 @@
+Map is an interface which is present in java.util API.
+Map is an object which stores key/value pairs.
+Both key and value are objects.
+Given a key, you can find its value.
+The keys must be unique,but you can have duplicate values.
+
+Map -> HashMap
+Map -> Hashtable

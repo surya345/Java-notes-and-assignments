@@ -1,0 +1,33 @@
+Regular Expression
+-------------------
+Pattern creation
+
+Pattern p= Pattern.compile("")--- creating a pattern 
+
+inbuilt Character class= \s- space
+	\S- extra space
+	
+	\d= [0-9]
+	\w= any word
+	.= any character
+	\\s
+	\"
+Qualifier/wildcard
+
+	?a= at most one a
+	www+= at least one charcter a"
+	*= any number of character
+	^= none of the given pattern data
+	
+
+-Matcher class
+----------------
+find()-- search for the given pattern
+start()-- start index of the matching pattern
+end()- end+1 index of the matching pattern
+
+
+/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+
+
+@12.A6pabz09/gi

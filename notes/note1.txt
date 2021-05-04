@@ -1,0 +1,73 @@
+class Login {
+    private String username;
+    private String password;
+    class ValidateCredentials {
+        public boolean Validate() {
+            if (username.equals("John") && password.equals("123456")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    public Login(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+}
+public class Program {
+    public static void main(String[] args) {
+        Login login = new Login("John", "12345");
+        Login.ValidateCredentials obj= login.new ValidateCredentials();
+        System.out.println(obj.Validate());
+    }
+}
+------------------------------------------------------------------------------------------------
+class Login {
+    private static String username;
+    private static String password;
+    static class ValidateCredentials {
+        public boolean Validate() {
+            if (username.equals("John") && password.equals("123456")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+public class Program {
+    public static void main(String[] args) {
+        Login login = new Login();
+        login.setUsername("John");
+        login.setPassword("123456");
+        Login.ValidateCredentials obj = new Login.ValidateCredentials();
+        System.out.println(obj.Validate());
+    }
+}
+------------------------------------------------------------------------------------------------
+interface Calculator {
+    void Sum(int a, int b);
+}
+// class MyCalc extends Calculator {
+// @Override
+// void Sum(int a, int b) {
+// System.out.println(a + b);
+// }
+// }
+public class Program {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator() {
+            public void Sum(int a, int b) {
+                System.out.println(a + b);
+            };
+        };
+        calc.Sum(10, 20);
+    }
+}

@@ -68,4 +68,4 @@ Step2 take the length of the string
 step3 check the character from the length and see whether it is equal to a,e,i,o,u. check in both upper case and lower case
 Step4 if it is equal then display character is vowel otherwise it is consonant
 Step5 End the Algorithm
-```
+```"# Java-assignments" 

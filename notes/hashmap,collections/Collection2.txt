@@ -1,0 +1,47 @@
+Collection API
+1. Set Interface: 
+   1. HashSet
+   2. TreeSet
+2. List Interface
+   1. ArrayList
+   2. LinkedList
+3. Queue Interface : A Queue is a collection for holding elements prior to processing. 
+Besides basic Collection operations, queues provide additional insertion, removal, and inspection 
+operations. The Queue interface follows.
+public interface Queue<E> extends Collection<E> {
+    E element();
+    boolean offer(E e);
+    E peek();
+    E poll();
+    E remove();
+}
+Insert - add() - offer()
+Remove - remove() - poll()
+Inspection - element() - peek()
+
+Each Queue method exists in two forms: 
+(1) one throws an exception if the operation fails, and 
+(2) the other returns a special value if the operation fails 
+(either null or false, depending on the operation).
+
+Queue -> PriorityQueue Class
+
+
+Deque Interface : Usually pronounced as deck, a deque is a double-ended-queue. 
+A double-ended-queue is a linear collection of elements that supports the insertion and removal
+ of elements at both end points. The Deque interface is a richer abstract data type than both 
+ Stack and Queue because it implements both stacks and queues at the same time. 
+ The Deque interface, defines methods to access the elements at both ends of the Deque instance. 
+ Methods are provided to insert, remove, and examine the elements. 
+ Predefined classes like ArrayDeque and LinkedList implement the Deque interface. 
+
+ Deque -> FIFO+LIFO(Queue+Stack)
+ 1. ArrayDeque
+ 2. LinkedList
+
+ Insert - addFirst()  - addLast()
+          offerFirst() - OfferLast()
+ Remove - removeFirst() - removeLast()
+          pollFirst() - pollLast()
+Inspection : peekFirst() - peekLast()
+             getFirst() - getLast();

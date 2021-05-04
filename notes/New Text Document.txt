@@ -1,0 +1,63 @@
+interface IScientificCalculator {
+    int FindLargest(int a, int b);
+}
+interface ICalculator extends IScientificCalculator {
+we cannot declare non abstract methods
+    void Factorial(int num);
+    void Divide(int a, int b);
+}
+abstract class Calculator {// in abstract we can declare abstract methods as well as non abstract methods
+    public Calculator() {
+        System.out.println("Hi this is calculator class");
+    }
+    abstract void Cube(int x);
+    abstract void Square(int x);
+    abstract void Sum(int a, int b);
+    public void Calculate(int a, int b) {
+        System.out.println(a - b);
+    }
+}
+class Child extends Calculator implements ICalculator {
+    @Override
+    void Cube(int x) {
+        System.out.println(x * x * x);
+    }
+    @Override
+    void Square(int x) {
+        System.out.println(x * x);
+    }
+    @Override
+    void Sum(int a, int b) {
+        System.out.println(a + b);
+    }
+    @Override
+    public void Calculate(int a, int b) {
+        System.out.println(a * b);
+    }
+    @Override
+    public void Factorial(int num) {
+        int fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        System.out.println(fact);
+    }
+    @Override
+    public void Divide(int a, int b) {
+        System.out.println(a / b);
+    }
+    @Override
+    public int FindLargest(int a, int b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+}
+public class Demo {
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.Calculate(50, 20);
+    }
+}

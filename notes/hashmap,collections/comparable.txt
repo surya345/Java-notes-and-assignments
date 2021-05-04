@@ -1,0 +1,63 @@
+Collection
+
+	List ArrayList 
+	LinkedList
+	Set: Hashset, TreeSet:
+
+
+homogeneous data
+-----------------
+TreeSet t= new TreeSet()---
+
+Comparable interface implementing class 
+default sorting[string in alphabetical order, integer in ascending order]
+
+For customized sorting we are using Comparator interface.
+	
+in comparable interface we have one implementing method compareTo().
+
+in TreeSet we can use only either comparable class or comparator implemented classes.
+All wrapper classes and string class by default implementing comparable interface.
+----------------------------------------------------------------------------------------
+
+public int compareTo(Object obj){
+
+
+	if(obj1>obj2)
+		
+	return +ve// obj1 will come prior to object2
+
+	if(obj1<obj2)
+	
+	-ve// obj1 comse after obj2
+
+	if(obj1==obj2)
+		return 0// obj1 already exist in tree
+
+}
+
+
+comparator interface:
+-----------------------
+1. equals()
+2. copmare()
+
+
+public int compare(obj1, obj2){
+
+if(obj1>obj2)
+		
+	return +ve// obj1 will come prior to object2
+
+	if(obj1<obj2)
+	
+	-ve// obj1 comse after obj2
+
+	if(obj1==obj2)
+		return 0// obj1 already exist in tree
+
+}
+
+
+
+

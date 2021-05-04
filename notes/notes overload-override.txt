@@ -1,0 +1,60 @@
+/**
+ * Program
+ */
+public class Program {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        calc.Add(10, 20, 30);
+        calc.Add(10, 20);
+        calc.Add("Hello", "World");
+        calc.Add(2.5f, 10);
+        calc.Add(20, 4.6f);
+    }
+}
+/**
+ * Calculator // method overloading compile time polymorphism
+ */
+class Calculator {
+    public void Add(int a, int b) {
+        System.out.println(a + b);
+    }
+    public void Add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+    public void Add(String a, String b) {
+        System.out.println(a + b);
+    }
+    public void Add(int a, float b) {
+        System.out.println(a + b);
+    }
+    public void Add(float a, int b) {
+        System.out.println(a + b);
+    }
+}
+-------------------------------------------------------------------------------
+/**
+ * Program // method overriding also known as run time polymorphism and we can do both upcasting and downcasting. by parent p=new child();
+ */
+public class Program {
+    public static void main(String[] args) {
+        Parent p = new Child();
+        p.Calculate(10, 20);
+    }
+}
+/**
+ * Calculator
+ */
+class Parent {
+    public void Calculate(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+class Child extends Parent {
+    @Override
+    public void Calculate(int a, int b) {
+        System.out.println(a * b);
+    }
+    public void Show(){
+        System.out.println("Hello");
+    }
+}
